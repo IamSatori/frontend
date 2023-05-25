@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Satori</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.2/web3.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Satori</h1>
+  </div>
+
+  <div class="grid-container" id="grid-container">
+  <div class="grid-item" style="background-color: #caa6fe;">
+    <button class="plus-button">+</button>
+
+  </div>
+  </div>
+
+  <div id="introModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-sections">
+        <div class="modal-section">
+      <h2>Color Status</h2>
+      <p>1. <span style="color:#4D49BF">Withdraw ready</span> : You can withdraw.</p>
+      <p>2. <span style="color:#03A64A">Time left</span> : You can buy that another person owns.</p>
+      <p>3. <span style="color:#070C0D">Not start</span> : It hasn't started yet, you can buy!</p>
+      <p>4. <span style="color:#F26241">Own</span> : You own that, wait until the time is over.</p>
+      <p>5. <span style="color:#caa6fe">Created</span> : You Created!</p>
+
+      </div>
+
+      <div class="modal-section">
+      <h2>How to play</h2>
+
+      <p>1. Click that you want to buy</p>
+      <p>2. It will create contract to sign</p>
+      <p>3. Sign the contract</p>
+      <p>4. Wait to time is over</p>
+      <p>5. If someone buy yours, you lose yours, if you want to buy it again, you can.</p>
+      <p>6. Withdraw yours</p>
+
+      <h2>Date Count</h2>
+      <p>It is based on blockcreated time, so it can be delayed.</p>
+
+      </div>
+
+      <div class="modal-section">
+      <h2>FQA</h2>
+
+      <h3>What happens if someone buys mine before time is over?</h3>
+      <p>It's okay, you can buy it again. But you will lose the USDC you previously used.</p>
+      <h3>Dose it only way to Get USDC is to buy that?</h3>
+      <p>No! You can make it to press + button and you can get 10% of the price when someone buys you created.</p>
+      <h3>How much is the fee?</h3>
+      <p>20%</p>
+
+      </div>
+      <div class="modal-section">
+        <h2>Info</h2>
+        <h3>How Can I trust system?</h3>
+        <p>It works on the blockchain, so you can check the code and the transaction history.</p>
+        <h3>What is the contract address?</h3>
+        <p>0xC9C8e888133BC0f422f10cd9423A2CF6B4CCCad5</p>
+        <h3>Who made this?,Contact me,if you have any leagal problem</h3>
+        <p>Satori/email: iamsatori@protonmail.com</p>
+        <h3>Announcement</h3>
+        <a href="https://twitter.com/dev_satori"data-show-count="false">Follow @dev_satori</a>
+      </div>
+      </div>
+      <button id="introButton">Start</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
