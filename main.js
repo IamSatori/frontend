@@ -311,7 +311,7 @@
   var addr;
   var timeloop;
   var transcationworking = false;
-  const cooldown = 300;
+  const cooldown = 604800;
   const tokendecimal = 18;
   const createusdc = BigInt(40 * 10 ** tokendecimal);
   function addVault(id, time, level, held, status) {
