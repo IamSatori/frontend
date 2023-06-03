@@ -303,7 +303,7 @@
     alert("not allow");
     window.location.href = "https://www.google.com";
   }
-  const maincontract = "0xC9C8e888133BC0f422f10cd9423A2CF6B4CCCad5";
+  const maincontract = "0x185C628095D7674c03E87D7073A1A2cD1347b0C6";
   const tokencontract = "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d";
   var workcontract;
   var token;
@@ -311,9 +311,9 @@
   var addr;
   var timeloop;
   var transcationworking = false;
-  const cooldown = 604800;
+  const cooldown = 345600;
   const tokendecimal = 18;
-  const createusdc = BigInt(40 * 10 ** tokendecimal);
+  const createusdc = BigInt(10 * 10 ** tokendecimal);
   function addVault(id, time, level, held, status) {
     let div = document.createElement("div");
     div.setAttribute("class", "grid-item");
