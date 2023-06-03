@@ -512,7 +512,7 @@
       if (
         (await token.methods.allowance(addr, maincontract).call()) < createusdc
       ) {
-        alert("Please approve 40 USDC to contract");
+        alert("Please approve USDC to contract");
         await token.methods
           .approve(maincontract, createusdc)
           .send({ from: addr });
