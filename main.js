@@ -303,7 +303,7 @@
     alert("not allow");
     window.location.href = "https://www.google.com";
   }
-  const maincontract = "0x185C628095D7674c03E87D7073A1A2cD1347b0C6";
+  const maincontract = "0x145114F13d707694dC886B1E2532164e57ECAd8A";
   const tokencontract = "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d";
   var workcontract;
   var token;
@@ -313,7 +313,7 @@
   var transcationworking = false;
   const cooldown = 345600;
   const tokendecimal = 18;
-  const createusdc = BigInt(10 * 10 ** tokendecimal);
+  const createusdc = BigInt(40 * 10 ** tokendecimal);
   function addVault(id, time, level, held, status) {
     let div = document.createElement("div");
     div.setAttribute("class", "grid-item");
@@ -512,7 +512,7 @@
       if (
         (await token.methods.allowance(addr, maincontract).call()) < createusdc
       ) {
-        alert("Please approve USDC to contract");
+        alert("Please approve 40 USDC to contract");
         await token.methods
           .approve(maincontract, createusdc)
           .send({ from: addr });
